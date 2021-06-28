@@ -8,24 +8,71 @@
 
 .main {
   width: 100%;
-  display: flex;
+  margin: 0;
+  /* display: flex; */
 }
 .banner {
   width: 100%;
-  /* background-image: url(./images/bg-image1.png); */
-  background-image: url(./images/bg-image2.png);
+  margin: 0;
+  /* background-image: url(./images/bg-image2.png); */
   background-size: cover;
+  /* background-image: url(./images/bg-image1.png); */
   /* background-position: cover; */
+  /* display: inline; */
 }
-.banner > .main-title {
-  font-size: 200px;
+.container > .main-title {
+  /* font-size: 150px; */
   color: #000;
   text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
     -1px -1px 0 #000;
 }
-.banner > p {
+.container > p {
   font-size: 50px;
   color: white;
   text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
     -1px -1px 0 #000;
+  margin-bottom: 20px;
 }
+
+.bg-blue {
+  background-color: #37559b;
+  /* height: 1000px; */
+}
+/* .container {
+  background-color: #37559b;
+} */
+
+/* tabs area */
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #000;
+  background-color: white;
+}
+
+.tab-content {
+  color: #fff;
+}
+
+#visual {
+  width: 100%;
+  height: auto;
+}
+/* tab area end */
+
+/* @media screen and (max-width: 768px) {
+  .container > .main-title {
+    font-size: 50px;
+  }
+  .container > p {
+    font-size: 26px;
+  }
+  .banner {
+    width: 100%;
+    margin: 0;
+    background-image: url(./images/bg-image2.png);
+    background-size: cover;
+  }
+} */
