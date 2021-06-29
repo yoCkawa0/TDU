@@ -2,7 +2,13 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京電機大学オープンキャンパス | TDU Opne Campus</title>
+    <link rel="stylesheet" href="./assets/main-style.css" />
+    <link rel="stylesheet" href="./assets/test1.css" />
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,131 +20,293 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
-  </head>
 
+    <!-- Avant UI cdn area -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/avantui.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+      integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/avantui.js"></script>
+  </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <!-- navigation area -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" id="logo" href="./index.html">
+          <img
+            src="./assets/images/logo01.jpeg"
+            alt=""
+            width="40"
+            height="30"
+            class="d-inline-block align-top"
+          />
+          東京電機大学
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >一つ目の項目</a
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                学部学科
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- <li><hr class="dropdown-divider" /></li> -->
+                <li class="dropdown-item">
+                  <p class="campus">東京千住キャンパス</p>
+                </li>
+                <li><a class="dropdown-item" href="#">工学部</a></li>
+                <li><a class="dropdown-item" href="#">未来科学部</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">システムデザイン工学部</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li class="dropdown-item">
+                  <p class="campus">鳩山キャンパス</p>
+                </li>
+                <li><a class="dropdown-item" href="#">理工学部</a></li>
+                <!-- <li><hr class="dropdown-divider" /></li> -->
+                <!-- <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li> -->
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">二つ目の項目</a>
+              <a class="nav-link" href="#">資料請求</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">三つ目の項目</a>
+              <a class="nav-link" href="#">入試情報</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">四つ目の項目</a>
-            </li>
+
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li> -->
           </ul>
-          <button
-            class="btn btn-outline-light"
-            onclick="location.href='#'"
-            role="button"
-          >
-            Login
-          </button>
         </div>
       </div>
     </nav>
+    <!-- nav area end -->
+    <div class="main bg-blue">
+      <div class="banner bg-white">
+        <div class="container m-0 p-0">
+          <div class="bg-image"></div>
+          <h1 class="mt-5 main-title display-1">
+            Open <br />
+            Campus <br />
+            2021
+          </h1>
+          <p class="text-left m-5 diplay-3">
+            電大のリアルを体感する！<br />学科・学系の違いがハッキリわかる！
+          </p>
 
-    <style>
-      .main-visual-5 {
-        background: linear-gradient(
-            25deg,
-            rgba(255, 190, 44, 0.8),
-            rgba(255, 44, 171, 0.8)
-          ),
-          url(./img/main-visual.jpeg);
-        background-size: cover;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
-        padding-top: 3rem;
-        padding-bottom: 5rem;
-        /* 参考URL：
-      https://developer.mozilla.org/ja/docs/Web/CSS/clip-path */
-      }
-    </style>
+          <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 960 263"
+            class="m-0"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #3d8ac3;
+                }
+                .cls-2 {
+                  fill: #3779b7;
+                }
+                .cls-3 {
+                  fill: #3567a9;
+                }
+                .cls-4 {
+                  fill: #37559b;
+                }
+              </style>
+            </defs>
+            <g id="レイヤー_2" data-name="レイヤー 2">
+              <g id="visual">
+                <path
+                  class="cls-1"
+                  d="M0,0,14.5,13C29,26,58,52,87.2,57.3s58.5-10,87.6-7.1S233,74,262,71.3s58-29,87-40.3,58-7.7,87.2-.3,58.5,18.3,87.6,31S582,88.7,611,96.2s58,8.1,87-9.7S756,32.3,785.2,15s58.5-15.7,87.6,2.5S931,70.3,945.5,87.7L960,105V263H0Z"
+                />
+                <path
+                  class="cls-2"
+                  d="M0,104l14.5,2.8C29,109.7,58,115.3,87.2,122s58.5,14.3,87.6,13.2S233,124,262,112.2s58-25.5,87-31.4a154,154,0,0,1,87.2,7.4c29.1,11.1,58.5,31.5,87.6,35s58.2-9.9,87.2-14,58,.8,87-1.2,58-11,87.2-6.7,58.5,22,87.6,27.9,58.2-.2,72.7-3.2l14.5-3V263H0Z"
+                />
+                <path
+                  class="cls-3"
+                  d="M0,152l14.5.2c14.5.1,43.5.5,72.7,4.5s58.5,11.6,87.6,4.5S233,132,262,130.7s58,18,87,26.1,58,5.2,87.2,4.4,58.5.5,87.6,1,58.2.1,87.2-3,58-9.2,87-15.2,58-12,87.2-5.2,58.5,26.5,87.6,33.9,58.2,2.3,72.7-.2L960,170v93H0Z"
+                />
+                <path
+                  class="cls-4"
+                  d="M0,177l14.5.2c14.5.1,43.5.5,72.7,8.6s58.5,24.2,87.6,29.9,58.2,1,87.2-5.5,58-14.9,87-20.7,58-9.2,87.2-9.3a440.39,440.39,0,0,1,87.6,8.5c29.2,5.6,58.2,14,87.2,19.5a406.24,406.24,0,0,0,87,7.3,344.46,344.46,0,0,0,87.2-13.7c29.1-8.5,58.5-21.1,87.6-19.6s58.2,17.1,72.7,25L960,215v48H0Z"
+                />
+              </g>
+            </g>
+          </svg> -->
+          <!-- <img src="./assets/images/bg-image2.svg" alt="" /> -->
+          <div class="test">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 960 263"
+              class="m-0"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #3d8ac3;
+                  }
+                  .cls-2 {
+                    fill: #3779b7;
+                  }
+                  .cls-3 {
+                    fill: #3567a9;
+                  }
+                  .cls-4 {
+                    fill: #37559b;
+                  }
+                </style>
+              </defs>
+              <g id="レイヤー_2" data-name="レイヤー 2">
+                <g id="visual">
+                  <path
+                    class="cls-1"
+                    d="M0,0,14.5,13C29,26,58,52,87.2,57.3s58.5-10,87.6-7.1S233,74,262,71.3s58-29,87-40.3,58-7.7,87.2-.3,58.5,18.3,87.6,31S582,88.7,611,96.2s58,8.1,87-9.7S756,32.3,785.2,15s58.5-15.7,87.6,2.5S931,70.3,945.5,87.7L960,105V263H0Z"
+                  />
+                  <path
+                    class="cls-2"
+                    d="M0,104l14.5,2.8C29,109.7,58,115.3,87.2,122s58.5,14.3,87.6,13.2S233,124,262,112.2s58-25.5,87-31.4a154,154,0,0,1,87.2,7.4c29.1,11.1,58.5,31.5,87.6,35s58.2-9.9,87.2-14,58,.8,87-1.2,58-11,87.2-6.7,58.5,22,87.6,27.9,58.2-.2,72.7-3.2l14.5-3V263H0Z"
+                  />
+                  <path
+                    class="cls-3"
+                    d="M0,152l14.5.2c14.5.1,43.5.5,72.7,4.5s58.5,11.6,87.6,4.5S233,132,262,130.7s58,18,87,26.1,58,5.2,87.2,4.4,58.5.5,87.6,1,58.2.1,87.2-3,58-9.2,87-15.2,58-12,87.2-5.2,58.5,26.5,87.6,33.9,58.2,2.3,72.7-.2L960,170v93H0Z"
+                  />
+                  <path
+                    class="cls-4"
+                    d="M0,177l14.5.2c14.5.1,43.5.5,72.7,8.6s58.5,24.2,87.6,29.9,58.2,1,87.2-5.5,58-14.9,87-20.7,58-9.2,87.2-9.3a440.39,440.39,0,0,1,87.6,8.5c29.2,5.6,58.2,14,87.2,19.5a406.24,406.24,0,0,0,87,7.3,344.46,344.46,0,0,0,87.2-13.7c29.1-8.5,58.5-21.1,87.6-19.6s58.2,17.1,72.7,25L960,215v48H0Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
 
-    <div class="mt-5 text-white main-visual-5">
-      <div class="container">
-        <h1 class="display-3">Main Visual</h1>
-        <p>
-          ページ上部に配置された大きな画像は観賞者に強い印象を与えます。この領域に配置された画像を、メインビジュアル、キービジュアル、ヒーローイメージなどと呼びます。Bootstrapではcontainerやp-5といったclass属性で確保される領域に画像を挿入することでメインビジュアルを表示できます。
-        </p>
-        <a
-          class="btn btn-outline-light btn-lg"
-          href="https://www.google.com/"
-          role="button"
-          >詳しくみる &raquo;</a
+      <div class="container mt-5 bg-blue">
+        <ul
+          class="nav nav-tabs nav-tabs-underline flex-lg-row text-"
+          id="myTab"
+          role="tablist"
         >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="home-tab-underline"
+              data-toggle="tab"
+              href="#home-underline"
+              role="tab"
+              aria-controls="home-underline"
+              aria-selected="true"
+              >東京千住キャンパス</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="profile-tab-underline"
+              data-toggle="tab"
+              href="#profile-underline"
+              role="tab"
+              aria-controls="profile-underline"
+              aria-selected="false"
+              >鳩山キャンパス</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content m-3" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home-underline"
+            role="tabpanel"
+            aria-labelledby="home-tab-underline"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            enim diam, laoreet a nisi id, bibendum congue orci. Nullam id auctor
+            elit, non sollicitudin est. Quisque rutrum, nulla a aliquam
+            facilisis, tellus ligula pellentesque Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Integer enim diam, laoreet a nisi id,
+            bibendum congue orci. Nullam id auctor elit, non sollicitudin est.
+            Quisque rutrum, nulla a aliquam facilisis, tellus ligula
+            pellentesque Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Integer enim diam, laoreet a nisi id, bibendum congue orci.
+            Nullam id auctor elit, non sollicitudin est. Quisque rutrum, nulla a
+            aliquam facilisis, tellus ligula pellentesque
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile-underline"
+            role="tabpanel"
+            aria-labelledby="profile-tab-underline"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            enim diam, laoreet a nisi id, bibendum congue orci. Nullam id auctor
+            elit, non sollicitudin est. Quisque rutrum, nulla a aliquam
+            facilisis, tellus ligula pellentesque Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Integer enim diam, laoreet a nisi id,
+            bibendum congue orci. Nullam id auctor elit, non sollicitudin est.
+            Quisque rutrum, nulla a aliquam facilisis, tellus ligula
+            pellentesque Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Integer enim diam, laoreet a nisi id, bibendum congue orci.
+            Nullam id auctor elit, non sollicitudin est. Quisque rutrum, nulla a
+            aliquam facilisis, tellus ligula pellentesque
+          </div>
+        </div>
       </div>
     </div>
 
-    <style>
-      .img-clipping-1 {
-        clip-path: circle(42%);
-      }
-      .img-clipping-2 {
-        border-radius: 0px;
-        clip-path: polygon(
-          0% 0%,
-          100% 0%,
-          100% 90%,
-          55% 90%,
-          50% 100%,
-          45% 90%,
-          0% 90%
-        );
-        /* 参考URL：
-      https://developer.mozilla.org/ja/docs/Web/CSS/border-radius
-      https://bennettfeely.com/clippy/ */
-      }
-    </style>
-
-    <!-- <div class="container pt-4">
-      <div class="row">
-        <script>
-          var n = 4;
-          for (var i = 0; i < n; i++) {
-            document.write(
-              '<div class="col-xs-12 col-sm-6 col-md-4">' +
-                '<div class="card mb-5 border-0 text-center">' +
-                '<img class="card-img-top img-clipping-1" src="./img/seaside.jpeg" alt="Card image cap">' +
-                '<div class="card-body">' +
-                '<h5 class="card-title text-primary">Card Component</h5>' +
-                '<p class="card-text">Webデザインでは同種のコンテンツを複数並べて配置することが多いため、Bootstrapでは矩形領域を反復配置するためにcardというclass属性が定義されています。</p>' +
-                '<a href="#" class="btn btn-primary">Go somewhere</a>' +
-                "</div>" +
-                "</div>" +
-                "</div>"
-            );
-          }
-        </script>
-      </div>
-    </div> -->
-
-    <hr class="featurette-divider" />
-
-    <footer class="container">
-      <p class="p-1 float-end"><a href="#">トップに戻る</a></p>
-      <p class="p-1">&copy; 2021 Footer, Inc.</p>
-    </footer>
+    <script src="./assets/main-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   </body>
 </html>

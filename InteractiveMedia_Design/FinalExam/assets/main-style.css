@@ -9,16 +9,24 @@
 .main {
   width: 100%;
   margin: 0;
+  /* background-color: #37559b; */
   /* display: flex; */
 }
 .banner {
+  /* background-color: white; */
   width: 100%;
   margin: 0;
+  margin-bottom: 20px;
   /* background-image: url(./images/bg-image2.png); */
-  background-size: cover;
+  background-image: url(./images/1x/アセット\ 1.png);
   /* background-image: url(./images/bg-image1.png); */
   /* background-position: cover; */
   /* display: inline; */
+  /* min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; */
+  background-size: cover;
 }
 .container > .main-title {
   /* font-size: 150px; */
@@ -76,3 +84,7 @@
     background-size: cover;
   }
 } */
+
+.test {
+  background-color: transparent;
+}
