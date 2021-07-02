@@ -12,6 +12,17 @@ var myPieChart = new Chart(ctx, {
         title: {
             display: true,
             text: "来場者アンケート",
+            fontColor: 'white',
+            fontSize: 20,
+            textAlign: 'center',
+
+        },
+        legend: {
+            labels: {
+                // このフォントプロパティ指定は、グローバルプロパティを上書きします
+                fontColor: 'white',
+                fontSize: 20
+            }
         },
     },
 });

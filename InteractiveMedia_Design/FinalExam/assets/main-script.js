@@ -11,7 +11,8 @@ function createApp() {
                 {
                     id: "hatoyama",
                     name: "鳩山キャンパス",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integerenim diam, laoreet a nisi id, bibendum congue orci. Nullam id auctorelit, non sollicitudin est. Quisque rutrum, nulla a aliquamfacilisis, tellus ligula pellentesque Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer enim diam, laoreet a nisi id,bibendum congue orci. Nullam id auctor elit, non sollicitudin est. Quisque rutrum, nulla a aliquam facilisis, tellus ligula pellentesque Lorem ipsum dolor sit amet, consectetur adipiscingelit. Integer enim diam, laoreet a nisi id, bibendum congue orci. Nullam id auctor elit, non sollicitudin est. Quisque rutrum, nulla a aliquam facilisis, tellus ligula pellentesque"
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integerenim diam, laoreet a nisi id, bibendum congue orci. Nullam id auctorelit, non sollicitudin est. Quisque rutrum, nulla a aliquamfacilisis, tellus ligula pellentesque Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer enim diam, laoreet a nisi id,bibendum congue orci. Nullam id auctor elit, non sollicitudin est. Quisque rutrum, nulla a aliquam facilisis, tellus ligula pellentesque Lorem ipsum dolor sit amet, consectetur adipiscingelit. Integer enim diam, laoreet a nisi id, bibendum congue orci. Nullam id auctor elit, non sollicitudin est. Quisque rutrum, nulla a aliquam facilisis, tellus ligula pellentesque",
+                    // foo: '<p class="text-left m-5 diplay-3">電大のリアルを体感する！ < br / > 学科・ 学系の違いがハッキリわかる！ </p>'
                 },
             ]
         },
@@ -23,6 +24,9 @@ function createApp() {
         methods: {
             onClick(index) {
                 this.currentTabIndex = index
+                // if (index = hatoyama) {
+                //     this.display = true
+                // }
             }
         },
     })

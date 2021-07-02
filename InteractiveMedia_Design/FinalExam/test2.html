@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>東京電機大学オープンキャンパス | TDU Opne Campus</title>
     <!-- <link rel="stylesheet" href="./assets/main-style.css" /> -->
+    <link rel="stylesheet" href="./assets/timeline.css" />
     <link rel="stylesheet" href="./assets/test1.css" />
+    <link rel="stylesheet" href="./assets/timeline2.css" />
 
     <!-- Bootstrap -->
     <link
@@ -48,33 +50,331 @@
     <div class="parallax"></div>
     <!-- <img src="./assets/images/bg-image2.svg" alt="" /> -->
     <!-- <div class="front"> -->
-    <svg
-      id="visual"
-      viewBox="0 0 960 540"
-      width="960"
-      height="540"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      version="1.1"
-      class="front"
-    >
-      <path
-        d="M0 278L14.5 291C29 304 58 330 87.2 335.3C116.3 340.7 145.7 325.3 174.8 328.2C204 331 233 352 262 349.3C291 346.7 320 320.3 349 309C378 297.7 407 301.3 436.2 308.7C465.3 316 494.7 327 523.8 339.7C553 352.3 582 366.7 611 374.2C640 381.7 669 382.3 698 364.5C727 346.7 756 310.3 785.2 293C814.3 275.7 843.7 277.3 872.8 295.5C902 313.7 931 348.3 945.5 365.7L960 383L960 541L945.5 541C931 541 902 541 872.8 541C843.7 541 814.3 541 785.2 541C756 541 727 541 698 541C669 541 640 541 611 541C582 541 553 541 523.8 541C494.7 541 465.3 541 436.2 541C407 541 378 541 349 541C320 541 291 541 262 541C233 541 204 541 174.8 541C145.7 541 116.3 541 87.2 541C58 541 29 541 14.5 541L0 541Z"
-        fill="#3d8ac3"
-      ></path>
-      <path
-        d="M0 382L14.5 384.8C29 387.7 58 393.3 87.2 400C116.3 406.7 145.7 414.3 174.8 413.2C204 412 233 402 262 390.2C291 378.3 320 364.7 349 358.8C378 353 407 355 436.2 366.2C465.3 377.3 494.7 397.7 523.8 401.2C553 404.7 582 391.3 611 387.2C640 383 669 388 698 386C727 384 756 375 785.2 379.3C814.3 383.7 843.7 401.3 872.8 407.2C902 413 931 407 945.5 404L960 401L960 541L945.5 541C931 541 902 541 872.8 541C843.7 541 814.3 541 785.2 541C756 541 727 541 698 541C669 541 640 541 611 541C582 541 553 541 523.8 541C494.7 541 465.3 541 436.2 541C407 541 378 541 349 541C320 541 291 541 262 541C233 541 204 541 174.8 541C145.7 541 116.3 541 87.2 541C58 541 29 541 14.5 541L0 541Z"
-        fill="#3779b7"
-      ></path>
-      <path
-        d="M0 430L14.5 430.2C29 430.3 58 430.7 87.2 434.7C116.3 438.7 145.7 446.3 174.8 439.2C204 432 233 410 262 408.7C291 407.3 320 426.7 349 434.8C378 443 407 440 436.2 439.2C465.3 438.3 494.7 439.7 523.8 440.2C553 440.7 582 440.3 611 437.2C640 434 669 428 698 422C727 416 756 410 785.2 416.8C814.3 423.7 843.7 443.3 872.8 450.7C902 458 931 453 945.5 450.5L960 448L960 541L945.5 541C931 541 902 541 872.8 541C843.7 541 814.3 541 785.2 541C756 541 727 541 698 541C669 541 640 541 611 541C582 541 553 541 523.8 541C494.7 541 465.3 541 436.2 541C407 541 378 541 349 541C320 541 291 541 262 541C233 541 204 541 174.8 541C145.7 541 116.3 541 87.2 541C58 541 29 541 14.5 541L0 541Z"
-        fill="#3567a9"
-      ></path>
-      <path
-        d="M0 455L14.5 455.2C29 455.3 58 455.7 87.2 463.8C116.3 472 145.7 488 174.8 493.7C204 499.3 233 494.7 262 488.2C291 481.7 320 473.3 349 467.5C378 461.7 407 458.3 436.2 458.2C465.3 458 494.7 461 523.8 466.7C553 472.3 582 480.7 611 486.2C640 491.7 669 494.3 698 493.5C727 492.7 756 488.3 785.2 479.8C814.3 471.3 843.7 458.7 872.8 460.2C902 461.7 931 477.3 945.5 485.2L960 493L960 541L945.5 541C931 541 902 541 872.8 541C843.7 541 814.3 541 785.2 541C756 541 727 541 698 541C669 541 640 541 611 541C582 541 553 541 523.8 541C494.7 541 465.3 541 436.2 541C407 541 378 541 349 541C320 541 291 541 262 541C233 541 204 541 174.8 541C145.7 541 116.3 541 87.2 541C58 541 29 541 14.5 541L0 541Z"
-        fill="#37559b"
-      ></path>
-    </svg>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Accordion Item #1
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <section class="timeline mt-5">
+              <div class="container">
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <h2>Title</h2>
+                    <div class="date">1 MAY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">25 MAY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">3 JUN 2016</div>
+                    <h2>Quote</h2>
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dicta explicabo debitis omnis dolor iste fugit totam quasi
+                      inventore!
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInRight">
+                    <h2>Title</h2>
+                    <div class="date">22 JUN 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInLeft">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">10 JULY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">30 JULY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">5 AUG 2016</div>
+                    <h2>Quote</h2>
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dicta explicabo debitis omnis dolor iste fugit totam quasi
+                      inventore!
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">19 AUG 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"><div class="img2"></div></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">1 SEP 2016</div>
+                    <h2>Title</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Accordion Item #2
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <section id="timeline">
+              <h1>A Flexbox Timeline</h1>
+              <p class="leader">
+                All cards must be the same height and width for space
+                calculations on large screens.
+              </p>
+              <div class="demo-card-wrapper">
+                <div class="demo-card demo-card--step1">
+                  <div class="head">
+                    <div class="number-box">
+                      <span>01</span>
+                    </div>
+                    <h2><span class="small">Subtitle</span> Technology</h2>
+                  </div>
+                  <div class="body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Soluta reiciendis deserunt doloribus consequatur,
+                      laudantium odio dolorum laboriosam.
+                    </p>
+                    <img src="http://placehold.it/1000x500" alt="Graphic" />
+                  </div>
+                </div>
+
+                <div class="demo-card demo-card--step2">
+                  <div class="head">
+                    <div class="number-box">
+                      <span>02</span>
+                    </div>
+                    <h2><span class="small">Subtitle</span> Confidence</h2>
+                  </div>
+                  <div class="body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Soluta reiciendis deserunt doloribus consequatur,
+                      laudantium odio dolorum laboriosam.
+                    </p>
+                    <img src="http://placehold.it/1000x500" alt="Graphic" />
+                  </div>
+                </div>
+
+                <div class="demo-card demo-card--step3">
+                  <div class="head">
+                    <div class="number-box">
+                      <span>03</span>
+                    </div>
+                    <h2><span class="small">Subtitle</span> Adaptation</h2>
+                  </div>
+                  <div class="body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Soluta reiciendis deserunt doloribus consequatur,
+                      laudantium odio dolorum laboriosam.
+                    </p>
+                    <img src="http://placehold.it/1000x500" alt="Graphic" />
+                  </div>
+                </div>
+
+                <div class="demo-card demo-card--step4">
+                  <div class="head">
+                    <div class="number-box">
+                      <span>04</span>
+                    </div>
+                    <h2><span class="small">Subtitle</span> Consistency</h2>
+                  </div>
+                  <div class="body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Soluta reiciendis deserunt doloribus consequatur,
+                      laudantium odio dolorum laboriosam.
+                    </p>
+                    <img src="http://placehold.it/1000x500" alt="Graphic" />
+                  </div>
+                </div>
+
+                <div class="demo-card demo-card--step5">
+                  <div class="head">
+                    <div class="number-box">
+                      <span>05</span>
+                    </div>
+                    <h2><span class="small">Subtitle</span> Conversion</h2>
+                  </div>
+                  <div class="body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Soluta reiciendis deserunt doloribus consequatur,
+                      laudantium odio dolorum laboriosam.
+                    </p>
+                    <img src="http://placehold.it/1000x500" alt="Graphic" />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Accordion Item #3
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- </div> -->
 
     <div style="height: 1000px">
