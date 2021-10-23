@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京電機大学オープンキャンパス | TDU Opne Campus</title>
+    <link rel="stylesheet" href="./assets/main-style.css" />
+    <link rel="stylesheet" href="./assets/test1.css" />
+    <link rel="stylesheet" href="./assets/timeline.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Avant UI cdn area -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/avantui.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+      integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/avantui.js"></script>
+    　
+  </head>
+  <body>
+    <!-- navigation area -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="logo" href="./index.html">
+          <img
+            src="./assets/images/logo01.jpeg"
+            alt=""
+            width="40"
+            height="30"
+            class="d-inline-block align-top"
+          />
+          東京電機大学
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                学部学科
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- <li><hr class="dropdown-divider" /></li> -->
+                <li class="dropdown-item">
+                  <p class="campus">東京千住キャンパス</p>
+                </li>
+                <li><a class="dropdown-item" href="#">工学部</a></li>
+                <li><a class="dropdown-item" href="#">未来科学部</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">システムデザイン工学部</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li class="dropdown-item">
+                  <p class="campus">鳩山キャンパス</p>
+                </li>
+                <li><a class="dropdown-item" href="#">理工学部</a></li>
+                <!-- <li><hr class="dropdown-divider" /></li> -->
+                <!-- <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">資料請求</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">入試情報</a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav area end -->
+
+    <div class="main bg-blue mt-5">
+      <div class="banner bg-white">
+        <div class="container m-0">
+          <h1 class="m-3 main-title display-1">
+            Open <br />
+            Campus <br />
+            2021
+          </h1>
+          <p class="text-left m-5 diplay-3">
+            電大のリアルを体感する！<br />学科・学系の違いがハッキリわかる！
+          </p>
+        </div>
+      </div>
+
+      <!-- tab area 千住　鳩山 -->
+
+      <!-- tab1 -->
+      <!-- <div class="container">
+        <div id="timetableapp">
+          <div id="wrapper">
+            <h1>Time Table</h1>
+            <div id="tab">
+              <div
+                v-for="(tab, index) in tabs"
+                :key="tab.id"
+                @click="onClick(index)"
+                class="tab-list"
+                :class="{'-active': index === currentTabIndex}"
+              >
+                <button class="text-white font-weight-bold">
+                  {{ tab.name }}
+                </button>
+              </div>
+            </div>
+            <div id="content" class="mt-">{{ currentTabContent }}</div>
+            <div v-html="foo"></div>
+            <div v-show=></div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- tab2 -->
+      <div class="container mt-5 bg-blue">
+        <h1 class="text-center m-5 diplay-3 text-white">Time Table</h1>
+        <ul
+          class="nav nav-tabs nav-tabs-underline flex-lg-row text-"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item nav-title">
+            <a
+              class="nav-link active"
+              id="home-tab-underline"
+              data-toggle="tab"
+              href="#home-underline"
+              role="tab"
+              aria-controls="home-underline"
+              aria-selected="true"
+              >東京千住キャンパス</a
+            >
+          </li>
+          <li class="nav-item nav-title">
+            <a
+              class="nav-link"
+              id="profile-tab-underline"
+              data-toggle="tab"
+              href="#profile-underline"
+              role="tab"
+              aria-controls="profile-underline"
+              aria-selected="false"
+              >鳩山キャンパス</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content m-3" id="myTabContent">
+          <div
+            class="tab-pane fade show active mt-5"
+            id="home-underline"
+            role="tabpanel"
+            aria-labelledby="home-tab-underline"
+          >
+            大学入学後の学びや学生生活が分かるように工夫をしています！
+            学科ごとに展示教室を設けたり、普段見ることのできない研究室を公開予定です。ネットで検索しても分からないことを知るために、ぜひご来場ください！多くの先輩学生や教授が皆さんの質問や疑問ににお答えします！<br />
+            <i>東京千住キャンパスは北千住駅から徒歩1分！</i>
+
+            <section class="timeline mt-5">
+              <div class="container">
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <h2>Title</h2>
+                    <div class="date">1 MAY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">25 MAY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">3 JUN 2016</div>
+                    <h2>Quote</h2>
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dicta explicabo debitis omnis dolor iste fugit totam quasi
+                      inventore!
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInRight">
+                    <h2>Title</h2>
+                    <div class="date">22 JUN 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInLeft">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">10 JULY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">30 JULY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">5 AUG 2016</div>
+                    <h2>Quote</h2>
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dicta explicabo debitis omnis dolor iste fugit totam quasi
+                      inventore!
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">19 AUG 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"><div class="img2"></div></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">1 SEP 2016</div>
+                    <h2>Title</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile-underline"
+            role="tabpanel"
+            aria-labelledby="profile-tab-underline"
+          >
+            埼玉鳩山キャンパスにある理工学部は6学系あり、各学系は専門力を身につけるカリキュラムを用意しています。
+            教育・研究内容だけでなく学生生活も在校生スタッフから聞くことができます。ネットで検索しても分からないことを知るために、ぜひご来場ください！<br />
+            <i>埼玉鳩山キャンパスへは車でのご来場も可能です！</i>
+
+            <section class="timeline mt-5">
+              <div class="container">
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <h2>Title</h2>
+                    <div class="date">1 MAY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">25 MAY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">3 JUN 2016</div>
+                    <h2>Quote</h2>
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dicta explicabo debitis omnis dolor iste fugit totam quasi
+                      inventore!
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInRight">
+                    <h2>Title</h2>
+                    <div class="date">22 JUN 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInLeft">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">10 JULY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">30 JULY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">5 AUG 2016</div>
+                    <h2>Quote</h2>
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dicta explicabo debitis omnis dolor iste fugit totam quasi
+                      inventore!
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">19 AUG 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"><div class="img2"></div></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">1 SEP 2016</div>
+                    <h2>Title</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- tab 3-->
+      <!-- <div class="container mt-5 bg-blue">
+        <ul
+          class="nav nav-tabs nav-tabs-underline flex-lg-row text-"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="home-tab-underline"
+              data-toggle="tab"
+              href="#home-underline"
+              role="tab"
+              aria-controls="home-underline"
+              aria-selected="true"
+              >東京千住キャンパス</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="profile-tab-underline"
+              data-toggle="tab"
+              href="#profile-underline"
+              role="tab"
+              aria-controls="profile-underline"
+              aria-selected="false"
+              >鳩山キャンパス</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content m-3" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home-underline"
+            role="tabpanel"
+            aria-labelledby="home-tab-underline"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            enim diam, laoreet a nisi id, bibendum congue orci. Nullam id auctor
+            elit, non sollicitudin est. Quisque rutrum, nulla a aliquam
+            facilisis, tellus ligula pellentesque Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Integer enim diam, laoreet a nisi id,
+            bibendum congue orci. Nullam id auctor elit, non sollicitudin est.
+            Quisque rutrum, nulla a aliquam facilisis, tellus ligula
+            pellentesque Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Integer enim diam, laoreet a nisi id, bibendum congue orci.
+            Nullam id auctor elit, non sollicitudin est. Quisque rutrum, nulla a
+            aliquam facilisis, tellus ligula pellentesque
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile-underline"
+            role="tabpanel"
+            aria-labelledby="profile-tab-underline"
+          >
+            <section class="timeline">
+              <div class="container">
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <h2>Title</h2>
+                    <div class="date">1 MAY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">25 MAY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">3 JUN 2016</div>
+                    <h2>Quote</h2>
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dicta explicabo debitis omnis dolor iste fugit totam quasi
+                      inventore!
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInRight">
+                    <h2>Title</h2>
+                    <div class="date">22 JUN 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInLeft">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">10 JULY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">30 JULY 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">5 AUG 2016</div>
+                    <h2>Quote</h2>
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dicta explicabo debitis omnis dolor iste fugit totam quasi
+                      inventore!
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                    <div class="timeline-img-header">
+                      <h2>Card Title</h2>
+                    </div>
+                    <div class="date">19 AUG 2016</div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-img"></div>
+
+                  <div class="timeline-content js--fadeInLeft">
+                    <div class="date">1 SEP 2016</div>
+                    <h2>Title</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Maxime ipsa ratione omnis alias cupiditate saepe atque
+                      totam aperiam sed nulla voluptatem recusandae dolor,
+                      nostrum excepturi amet in dolores. Alias, ullam.
+                    </p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div> -->
+      <div class="charts container">
+        <h1 class="text-center m-5 diplay-3 text-white">円グラフ</h1>
+        <p>
+          2021年6月開催のOpenCampusに参加いただいた方にアンケートを実施いたしました。
+        </p>
+        <canvas id="myPieChart"></canvas>
+      </div>
+    </div>
+
+    <script src="./assets/main-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+
+    <!-- timeline cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.8.35/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gantt-elastic@1.0.11/dist/GanttElastic.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gantt-elastic-header@0.1.11/dist/Header.umd.js"></script>
+    <!-- <script src="./assets/test.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="./assets/charts.js"></script>
+  </body>
+</html>

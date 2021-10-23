@@ -1,0 +1,93 @@
+#logo {
+  color: #37559b;
+  font-weight: 800;
+}
+.campus {
+  font-weight: 600;
+}
+
+.main {
+  width: 100%;
+  margin: 0;
+  /* background-color: #37559b; */
+  /* display: flex; */
+}
+.banner {
+  /* background-color: white; */
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  /* background-image: url(./images/bg-image2.png); */
+  background-image: url(./images/1x/アセット\ 1.png);
+  /* background-image: url(./images/bg-image1.png); */
+  /* background-position: cover; */
+  /* display: inline; */
+  /* min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; */
+  background-size: cover;
+}
+.container > .main-title {
+  /* font-size: 150px; */
+  color: #000;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+.container > p {
+  font-size: 50px;
+  color: white;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+  margin-bottom: 20px;
+}
+
+.bg-blue {
+  background-color: #37559b;
+  /* height: 1000px; */
+}
+/* .container {
+  background-color: #37559b;
+} */
+
+/* tabs area */
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #000;
+  background-color: white;
+}
+
+.tab-content {
+  color: #fff;
+}
+
+#visual {
+  width: 100%;
+  height: auto;
+}
+
+.test {
+  background-color: transparent;
+}
+
+/* .charts {
+  width: 50%;
+} */
+
+.charts > p {
+  text-align: center;
+  font-size: 20px;
+  text-shadow: none;
+  /* margin-bottom: 20px; */
+}
+
+.tab-pane {
+  font-size: 24px;
+}
+.tab-pane > i {
+  color: black;
+  background-color: yellow;
+}
