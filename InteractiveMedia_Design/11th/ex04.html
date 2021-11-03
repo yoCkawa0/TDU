@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- この例では分かりやすさのために<style>やCSSを使わないことにする -->
+<body>
+  <p id="myID1" style="color: #ff00ff">DOM操作の例</p>
+  <p id="myID2" style="color: #000000">3秒待つと...</p>
+  
+  <script>
+    var x = document.querySelector("#myID2");
+    var y = 3;
+    x.textContent = y + '秒待つと...';
+    setTimeout(function(){
+      x.style.color = '#0000ff';
+      x.textContent = 'HTML要素が書き換わる！';
+    }, y * 1000);
+  </script>
+</body>
+</html>
